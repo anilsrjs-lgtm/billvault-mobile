@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../features/welcome/presentation/welcome_screen.dart';
+import 'package:billvault_mobile/shared/widgets/main_navigation.dart';
 
 class BillVaultApp extends StatelessWidget {
   const BillVaultApp({super.key});
@@ -7,13 +7,13 @@ class BillVaultApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BillVault',
       debugShowCheckedModeBanner: false,
+      title: 'BillVault',
       theme: ThemeData(
         useMaterial3: true,
         colorSchemeSeed: Colors.indigo,
       ),
-      home: const WelcomeScreen(),
+      home: const MainNavigation(),
     );
   }
 }
